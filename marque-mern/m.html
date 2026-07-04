@@ -47,11 +47,17 @@
     .form-input:focus {
       border-color: rgb(80, 80, 221);
     }
+
+    .spiritual-text {
+      font-weight: bold;
+      color: #555;
+      margin: 10px 0;
+    }
   </style>
 </head>
 <body>
 
-  <h3>Hello This is from Feature Branch</h3>
+  <h3>&#x2739; Hello This is from Feature Branch</h3>
   
   <form class="form-container" id="userForm">
     
@@ -87,19 +93,17 @@
   </form>
 
   <script>
-
     document.getElementById('userForm').addEventListener('submit', function(event) {
       event.preventDefault(); 
       const name = document.getElementById('username').value;
       alert('Success! Form submitted for: ' + name);
+      
+      this.reset(); 
     });
   </script>
-<br> 
-  <p1> HARE KRISHNA </p1>
-<br> 
 
-<br> 
-  <p1> HARI BOL! </p1>
-<br> 
+  <p class="spiritual-text">HARE KRISHNA</p>
+  <p class="spiritual-text">HARI BOL!</p>
+
 </body>
 </html>
