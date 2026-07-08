@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="main">
+
+    <div class="title">
+        <h1>Box Model</h1>
+    </div>
+
+    <div class="box">
+        <p>Every element on the page has its own box, which can be styled using CSS.</p>
+    </div>
+
+    <div class="box">
+        <p class="inside">From the inside out:</p>
+
+        <div class="yellow">
+            <ul>
+                <li><span class="pink">content</span></li>
+                <li><span class="purple">padding</span></li>
+                <li><span class="orange">border</span></li>
+                <li><span class="violet">margin</span></li>
+            </ul>
+        </div>
+
+    </div>
+
+    <div class="background">
+
+        <h2>Background</h2>
+
+        <div class="box small">
+            <p>
+                Keep in mind that a
+                <span class="label">background</span>
+                will cover the content and the padding.
+            </p>
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>
